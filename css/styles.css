@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #445D48;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 15px;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #FDE5D4;
+  border: 2px solid #5E3023;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #D6CC99;
+}
+
+.message {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #001524;
+}
+
+button {
+  padding: 10px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #6a82fb;
+  color: white;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #5f6dec;
+}
+
+.x {
+  color: #D2B48C;
+}
+
+.o {
+  color: #001524;
+}
+
+.winning-strike {
+  background-color: rgba(94, 48, 35, 0.6);
+}
